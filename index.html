@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trend Sprint</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="phone-frame">
+        <div class="status-bar">
+          <span class="logo">Trend Sprint</span>
+          <span class="live-pill">LIVE GAME</span>
+        </div>
+
+        <section class="hud">
+          <div>
+            <p class="hud-label">Score</p>
+            <h1 id="score">0</h1>
+          </div>
+          <div>
+            <p class="hud-label">Combo</p>
+            <h2 id="combo">x1</h2>
+          </div>
+          <div>
+            <p class="hud-label">Time</p>
+            <h2 id="time">45</h2>
+          </div>
+        </section>
+
+        <section class="feed-stage">
+          <div class="glow glow-a"></div>
+          <div class="glow glow-b"></div>
+
+          <article class="video-card" id="card">
+            <div class="card-topline">
+              <span id="creatorHandle">@creator</span>
+              <span id="trendType" class="trend-type">Dance</span>
+            </div>
+
+            <div class="card-content">
+              <p id="caption" class="caption"></p>
+              <div class="challenge-box">
+                <p class="challenge-label">Your move</p>
+                <p id="goal" class="goal"></p>
+              </div>
+            </div>
+
+            <div class="action-stack">
+              <button class="action-icon" id="likeBtn" aria-label="Like video">♥</button>
+              <button class="action-icon" id="skipBtn" aria-label="Skip video">↟</button>
+              <button class="action-icon" id="commentBtn" aria-label="Comment on video">✎</button>
+            </div>
+          </article>
+
+          <div class="gesture-strip">
+            <div class="gesture-card">
+              <span>Like</span>
+              <strong>←</strong>
+            </div>
+            <div class="gesture-card">
+              <span>Skip</span>
+              <strong>↑</strong>
+            </div>
+            <div class="gesture-card">
+              <span>Comment</span>
+              <strong>→</strong>
+            </div>
+          </div>
+
+          <div id="feedback" class="feedback">Swipe the right move to keep the algorithm happy.</div>
+        </section>
+
+        <section class="start-panel" id="startPanel">
+          <p class="eyebrow">Arcade Mode</p>
+          <h2>Build your feed without feeding the cringe.</h2>
+          <p>
+            Read each post, decide the best action, and race the clock. Touch swipe
+            works too.
+          </p>
+          <button id="startBtn" class="primary-btn">Start Run</button>
+        </section>
+
+        <section class="end-panel hidden" id="endPanel">
+          <p class="eyebrow">Run Complete</p>
+          <h2 id="finalTitle">You went viral.</h2>
+          <p id="finalScoreText"></p>
+          <button id="restartBtn" class="primary-btn">Play Again</button>
+        </section>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
