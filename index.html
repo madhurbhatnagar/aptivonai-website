@@ -3,94 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trend Sprint</title>
+    <meta
+      name="description"
+      content="Aptivon AI helps businesses adopt practical AI systems, from internal knowledge chatbots to workflow automation and AI readiness."
+    />
+    <title>Aptivon AI | Practical AI Adoption for Business</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="app-shell">
-      <section class="phone-frame">
-        <div class="status-bar">
-          <span class="logo">Trend Sprint</span>
-          <span class="live-pill">LIVE GAME</span>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Aptivon AI home">
+        <span class="brand-mark">A</span>
+        <span>Aptivon AI</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <div class="signal-grid"></div>
+          <div class="insight-panel panel-one">
+            <span>Knowledge RAG</span>
+            <strong>Source-grounded answers</strong>
+          </div>
+          <div class="insight-panel panel-two">
+            <span>Automation</span>
+            <strong>Cleaner daily workflows</strong>
+          </div>
+          <div class="insight-panel panel-three">
+            <span>Readiness</span>
+            <strong>Teams prepared for AI</strong>
+          </div>
         </div>
 
-        <section class="hud">
-          <div>
-            <p class="hud-label">Score</p>
-            <h1 id="score">0</h1>
-          </div>
-          <div>
-            <p class="hud-label">Combo</p>
-            <h2 id="combo">x1</h2>
-          </div>
-          <div>
-            <p class="hud-label">Time</p>
-            <h2 id="time">45</h2>
-          </div>
-        </section>
-
-        <section class="feed-stage">
-          <div class="glow glow-a"></div>
-          <div class="glow glow-b"></div>
-
-          <article class="video-card" id="card">
-            <div class="card-topline">
-              <span id="creatorHandle">@creator</span>
-              <span id="trendType" class="trend-type">Dance</span>
-            </div>
-
-            <div class="card-content">
-              <p id="caption" class="caption"></p>
-              <div class="challenge-box">
-                <p class="challenge-label">Your move</p>
-                <p id="goal" class="goal"></p>
-              </div>
-            </div>
-
-            <div class="action-stack">
-              <button class="action-icon" id="likeBtn" aria-label="Like video">♥</button>
-              <button class="action-icon" id="skipBtn" aria-label="Skip video">↟</button>
-              <button class="action-icon" id="commentBtn" aria-label="Comment on video">✎</button>
-            </div>
-          </article>
-
-          <div class="gesture-strip">
-            <div class="gesture-card">
-              <span>Like</span>
-              <strong>←</strong>
-            </div>
-            <div class="gesture-card">
-              <span>Skip</span>
-              <strong>↑</strong>
-            </div>
-            <div class="gesture-card">
-              <span>Comment</span>
-              <strong>→</strong>
-            </div>
-          </div>
-
-          <div id="feedback" class="feedback">Swipe the right move to keep the algorithm happy.</div>
-        </section>
-
-        <section class="start-panel" id="startPanel">
-          <p class="eyebrow">Arcade Mode</p>
-          <h2>Build your feed without feeding the cringe.</h2>
-          <p>
-            Read each post, decide the best action, and race the clock. Touch swipe
-            works too.
+        <div class="hero-copy">
+          <p class="eyebrow">AI consulting and implementation</p>
+          <h1>Aptivon AI</h1>
+          <p class="hero-lede">
+            Helping businesses adopt practical AI systems with confidence, from
+            internal knowledge chatbots to workflow automation and AI readiness
+            training.
           </p>
-          <button id="startBtn" class="primary-btn">Start Run</button>
-        </section>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:hello@aptivonai.com">Start a Conversation</a>
+            <a class="button secondary" href="#services">View Services</a>
+          </div>
+        </div>
+      </section>
 
-        <section class="end-panel hidden" id="endPanel">
-          <p class="eyebrow">Run Complete</p>
-          <h2 id="finalTitle">You went viral.</h2>
-          <p id="finalScoreText"></p>
-          <button id="restartBtn" class="primary-btn">Play Again</button>
-        </section>
+      <section class="section intro">
+        <p>
+          Aptivon AI is built for business owners and teams who know AI matters,
+          but need a grounded path from interest to working systems.
+        </p>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">What we build</p>
+          <h2>Practical AI systems for real operations</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>AI Readiness</h3>
+            <p>
+              Identify the best use cases, assess data readiness, and create a
+              pragmatic adoption roadmap for your business.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Knowledge Chatbots</h3>
+            <p>
+              Build private RAG assistants that answer from your documents,
+              policies, FAQs, and internal knowledge.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Workflow Automation</h3>
+            <p>
+              Automate repetitive tasks across email, documents, CRM, support,
+              reporting, and operational handoffs.
+            </p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>Training and Enablement</h3>
+            <p>
+              Help teams understand AI safely, use tools effectively, and build
+              confidence through guided adoption.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section approach" id="approach">
+        <div class="section-heading">
+          <p class="eyebrow">How we work</p>
+          <h2>Start small, prove value, scale carefully</h2>
+        </div>
+        <div class="timeline">
+          <div>
+            <span>Discover</span>
+            <p>Clarify the business problem, data sources, risks, and success metrics.</p>
+          </div>
+          <div>
+            <span>Prototype</span>
+            <p>Build a focused AI workflow or assistant that can be tested quickly.</p>
+          </div>
+          <div>
+            <span>Deploy</span>
+            <p>Move from demo to usable system with guardrails, documentation, and support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact">
+        <div>
+          <p class="eyebrow">Based in London, building globally</p>
+          <h2>Ready to explore AI for your business?</h2>
+          <p>
+            Tell us where AI could save time, improve service, or unlock better
+            decisions. We will help turn that into a practical next step.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:hello@aptivonai.com">hello@aptivonai.com</a>
       </section>
     </main>
 
-    <script src="./script.js"></script>
+    <footer class="site-footer">
+      <span>Aptivon AI</span>
+      <span>Practical AI adoption for modern businesses.</span>
+    </footer>
   </body>
 </html>
