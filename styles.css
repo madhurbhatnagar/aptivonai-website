@@ -470,6 +470,21 @@ h3 {
   font-size: clamp(2rem, 4vw, 3.3rem);
 }
 
+.founder-profile {
+  display: grid;
+  justify-items: start;
+  gap: 22px;
+}
+
+.founder-profile img {
+  width: 112px;
+  height: 112px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 14px 36px rgba(20, 33, 31, 0.14);
+  object-fit: cover;
+}
+
 .founder-note {
   display: flex;
   flex-wrap: wrap;
