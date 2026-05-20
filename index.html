@@ -22,9 +22,7 @@
         <a href="#approach">Approach</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="nav-cta" href="mailto:madhur.mails@gmail.com?subject=AI%20consultation%20request">
-        Book a call
-      </a>
+      <a class="nav-cta" href="#contact">Start enquiry</a>
     </header>
 
     <main id="top">
@@ -38,9 +36,7 @@
             can trust.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="mailto:madhur.mails@gmail.com?subject=AI%20consultation%20request">
-              Start a conversation
-            </a>
+            <a class="button primary" href="#contact">Start an AI enquiry</a>
             <a class="button secondary" href="#demo">See the RAG chatbot demo</a>
           </div>
           <div class="trust-row" aria-label="Aptivon AI focus areas">
@@ -110,35 +106,43 @@
         <div class="service-grid">
           <article class="service-card">
             <span class="service-number">01</span>
-            <h3>AI Readiness Audit</h3>
-            <p>
-              Identify high-value AI opportunities, risks, data gaps, and a
-              practical roadmap your business can act on.
-            </p>
+            <div>
+              <h3>AI Readiness Audit</h3>
+              <p>
+                Identify high-value AI opportunities, risks, data gaps, and a
+                practical roadmap your business can act on.
+              </p>
+            </div>
           </article>
           <article class="service-card">
             <span class="service-number">02</span>
-            <h3>Private RAG Chatbots</h3>
-            <p>
-              Build assistants that answer from your policies, manuals, FAQs,
-              sales documents, onboarding material, and support knowledge.
-            </p>
+            <div>
+              <h3>Private RAG Chatbots</h3>
+              <p>
+                Build assistants that answer from policies, manuals, FAQs,
+                onboarding material, and support knowledge.
+              </p>
+            </div>
           </article>
           <article class="service-card">
             <span class="service-number">03</span>
-            <h3>Workflow Automation</h3>
-            <p>
-              Reduce repetitive work across reporting, document handling,
-              customer support, CRM updates, and internal handoffs.
-            </p>
+            <div>
+              <h3>Workflow Automation</h3>
+              <p>
+                Reduce repetitive work across reporting, document handling,
+                customer support, CRM updates, and internal handoffs.
+              </p>
+            </div>
           </article>
           <article class="service-card">
             <span class="service-number">04</span>
-            <h3>Team Training</h3>
-            <p>
-              Help staff use AI confidently with safe prompting, clear use
-              policies, and hands-on business examples.
-            </p>
+            <div>
+              <h3>Team Training</h3>
+              <p>
+                Help staff use AI confidently with safe prompting, clear use
+                policies, and hands-on business examples.
+              </p>
+            </div>
           </article>
         </div>
       </section>
@@ -205,27 +209,86 @@
             ideas into useful, working systems.
           </p>
         </div>
-        <div class="founder-note">
-          <strong>Focus areas</strong>
+        <div class="founder-note" aria-label="Aptivon AI focus areas">
           <span>RAG systems</span>
           <span>AI automation</span>
           <span>Business adoption</span>
         </div>
       </section>
 
-      <section class="contact-band" id="contact">
-        <div>
-          <p class="eyebrow">Start small, learn fast</p>
-          <h2>Book a practical AI discovery conversation.</h2>
-          <p>
-            Tell us what slows your team down, where knowledge is hard to find,
-            or which customer process needs improvement. We will help shape a
-            realistic first AI project.
-          </p>
+      <section class="contact-section" id="contact">
+        <div class="contact-inner">
+          <div class="contact-copy">
+            <p class="eyebrow">Start small, learn fast</p>
+            <h2>Tell us where AI could remove friction.</h2>
+            <p>
+              Share the workflow, document problem, or customer process you want
+              to improve. Aptivon AI will help shape a realistic first project
+              with clear scope, business value, and next steps.
+            </p>
+            <div class="contact-points" aria-label="What happens after enquiry">
+              <span>Practical first conversation</span>
+              <span>No obligation or hard sell</span>
+              <span>Focused on useful business outcomes</span>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/madhur.mails@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New Aptivon AI enquiry" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="text"
+              name="_honey"
+              class="honeypot"
+              tabindex="-1"
+              autocomplete="off"
+            />
+            <div class="form-row">
+              <label>
+                Name
+                <input name="name" type="text" autocomplete="name" required />
+              </label>
+              <label>
+                Work email
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+            </div>
+            <label>
+              Organisation
+              <input name="organisation" type="text" autocomplete="organization" />
+            </label>
+            <label>
+              What would you like AI to help with?
+              <select name="project_type" required>
+                <option value="">Select one</option>
+                <option>Private knowledge chatbot</option>
+                <option>Workflow automation</option>
+                <option>AI readiness audit</option>
+                <option>Team training</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+            <label>
+              Briefly describe your need
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Example: We have support documents and want staff to ask questions instead of searching folders."
+                required
+              ></textarea>
+            </label>
+            <button class="button primary" type="submit">Send enquiry</button>
+            <p class="form-note">
+              Your enquiry goes directly to Madhur Bhatnagar and is used only to
+              understand your AI requirement.
+            </p>
+          </form>
         </div>
-        <a class="button primary" href="mailto:madhur.mails@gmail.com?subject=AI%20consultation%20request">
-          madhur.mails@gmail.com
-        </a>
       </section>
     </main>
 
